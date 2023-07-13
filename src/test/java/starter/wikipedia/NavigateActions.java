@@ -11,5 +11,6 @@ public class NavigateActions extends UIInteractions {
     @Step("Navigate to the home page")
     public void toTheHomePage() {
         openUrl("https://wikipedia.com/");
+        getDriver().manage().window().maximize();
     }
 }
